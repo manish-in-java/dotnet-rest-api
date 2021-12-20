@@ -19,65 +19,83 @@ namespace Org.Example.Data
       elements = new Dictionary<String, ChemicalElement>();
 
       // Add Hydrogen.
-      ChemicalElement hydrogen = new ChemicalElement(1, "H", new Decimal(1.00794), "Hydrogen");
-      hydrogen.AddIsotope(new Isotope(1, "Hydrogen-1"));
-      hydrogen.AddIsotope(new Isotope(2, "Hydrogen-2"));
-      hydrogen.AddIsotope(new Isotope(3, "Hydrogen-3"));
+      ChemicalElement hydrogen = new ChemicalElement(1,
+                            "H",
+                            new Decimal(1.00794),
+                            "Hydrogen",
+                            1, 2, 3);
       elements.Add(hydrogen.Symbol, hydrogen);
 
       // Add Helium.
-      ChemicalElement helium = new ChemicalElement(2, "He", new Decimal(4.002602), "Helium");
-      helium.AddIsotope(new Isotope(3, "Helium-3"));
-      helium.AddIsotope(new Isotope(4, "Helium-4"));
+      ChemicalElement helium = new ChemicalElement(2,
+                            "He",
+                            new Decimal(4.002602),
+                            "Helium",
+                            3, 4);
       elements.Add(helium.Symbol, helium);
 
       // Add Lithium.
-      ChemicalElement lithium = new ChemicalElement(3, "Li", new Decimal(6.941), "Lithium");
-      lithium.AddIsotope(new Isotope(6, "Lithium-6"));
-      lithium.AddIsotope(new Isotope(7, "Lithium-7"));
+      ChemicalElement lithium = new ChemicalElement(3,
+                            "Li",
+                            new Decimal(6.941),
+                            "Lithium",
+                            6, 7);
       elements.Add(lithium.Symbol, lithium);
 
       // Add Beryllium.
-      ChemicalElement beryllium = new ChemicalElement(4, "Be", new Decimal(9.012182), "Beryllium");
-      beryllium.AddIsotope(new Isotope(9, "Beryllium-9"));
+      ChemicalElement beryllium = new ChemicalElement(4,
+                            "Be",
+                            new Decimal(9.012182),
+                            "Beryllium",
+                            9);
       elements.Add(beryllium.Symbol, beryllium);
 
       // Add Boron.
-      ChemicalElement boron = new ChemicalElement(5, "B", new Decimal(10.811), "Boron");
-      boron.AddIsotope(new Isotope(10, "Boron-10"));
-      boron.AddIsotope(new Isotope(11, "Boron-11"));
+      ChemicalElement boron = new ChemicalElement(5,
+                            "B",
+                            new Decimal(10.811),
+                            "Boron",
+                            10, 11);
       elements.Add(boron.Symbol, boron);
 
       // Add Carbon.
-      ChemicalElement carbon = new ChemicalElement(6, "C", new Decimal(12.0107), "Carbon");
-      carbon.AddIsotope(new Isotope(12, "Carbon-12"));
-      carbon.AddIsotope(new Isotope(13, "Carbon-13"));
-      carbon.AddIsotope(new Isotope(14, "Carbon-14"));
+      ChemicalElement carbon = new ChemicalElement(6,
+                            "C",
+                            new Decimal(12.0107),
+                            "Carbon",
+                            12, 13, 14);
       elements.Add(carbon.Symbol, carbon);
 
       // Add Nitrogen.
-      ChemicalElement nitrogen = new ChemicalElement(7, "N", new Decimal(14.0067), "Nitrogen");
-      nitrogen.AddIsotope(new Isotope(14, "Nitrogen-14"));
-      nitrogen.AddIsotope(new Isotope(15, "Nitrogen-15"));
+      ChemicalElement nitrogen = new ChemicalElement(7,
+                            "N",
+                            new Decimal(14.0067),
+                            "Nitrogen",
+                            14, 15);
       elements.Add(nitrogen.Symbol, nitrogen);
 
       // Add Oxygen.
-      ChemicalElement oxygen = new ChemicalElement(8, "O", new Decimal(15.9994), "Oxygen");
-      oxygen.AddIsotope(new Isotope(16, "Oxygen-16"));
-      oxygen.AddIsotope(new Isotope(17, "Oxygen-17"));
-      oxygen.AddIsotope(new Isotope(18, "Oxygen-18"));
+      ChemicalElement oxygen = new ChemicalElement(8,
+                            "O",
+                            new Decimal(15.9994),
+                            "Oxygen",
+                            16, 17, 18);
       elements.Add(oxygen.Symbol, oxygen);
 
       // Add Fluorine.
-      ChemicalElement fluorine = new ChemicalElement(9, "F", new Decimal(18.9984032), "Fluorine");
-      fluorine.AddIsotope(new Isotope(19, "Fluorine-19"));
+      ChemicalElement fluorine = new ChemicalElement(9,
+                            "F",
+                            new Decimal(18.9984032),
+                            "Fluorine",
+                            19);
       elements.Add(fluorine.Symbol, fluorine);
 
       // Add Neon.
-      ChemicalElement neon = new ChemicalElement(10, "Ne", new Decimal(20.1797), "Neon");
-      neon.AddIsotope(new Isotope(20, "Neon-20"));
-      neon.AddIsotope(new Isotope(21, "Neon-21"));
-      neon.AddIsotope(new Isotope(22, "Neon-22"));
+      ChemicalElement neon = new ChemicalElement(10,
+                            "Ne",
+                            new Decimal(20.1797),
+                            "Neon",
+                            20, 21, 22);
       elements.Add(neon.Symbol, neon);
     }
 
